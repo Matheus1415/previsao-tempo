@@ -1,18 +1,16 @@
-import { Box, VStack } from "@chakra-ui/react";
-import { AnimatedComponent } from "./components/AnimatedComponent";
-import { SearchBar } from "./components/SearchBar";
-import { WeatherInfo } from "./components/WeatherInfo";
+import { Box, Flex} from "@chakra-ui/react";
+import { BoxMain } from "./components/BoxMain";
+import { SearchInput } from "./components/SechInput";
+import { BoxCard } from "./components/BoxCard";
+
 
 function App() {
   return (
-      <Box textAlign="center" fontSize="xl" >
-        <VStack spacing={8}>
-          <AnimatedComponent>
-            <SearchBar />
-          </AnimatedComponent>
-          <WeatherInfo />
-        </VStack>
-      </Box>
+      <Flex textAlign="center" fontSize="xl" bg="#c089f7ed" minH={200} direction="column" align="center" justifyContent="center" p={10} h="100vh" gap={10} w="100vw">
+        <BoxMain />
+        <SearchInput/>
+        <BoxCard/>
+      </Flex>
   );
 }
 

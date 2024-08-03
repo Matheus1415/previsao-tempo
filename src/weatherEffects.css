@@ -1,0 +1,61 @@
+/* weatherEffects.css */
+
+.snowflakes {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    pointer-events: none;
+    overflow: hidden;
+    z-index: 1;
+  }
+  
+  .snowflake {
+    position: absolute;
+    width: 10px;
+    height: 10px;
+    background: #fff;
+    border-radius: 50%;
+    opacity: 0.8;
+    animation: snow 10s linear infinite;
+  }
+  
+  @keyframes snow {
+    0% {
+      transform: translateY(-100vh);
+    }
+    100% {
+      transform: translateY(100vh);
+    }
+  }
+  
+  .rain {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    pointer-events: none;
+    overflow: hidden;
+    z-index: 1;
+  }
+  
+  .drop {
+    position: absolute;
+    width: 2px;
+    height: 20px;
+    background: #00f;
+    opacity: 0.7;
+    animation: rain 0.5s linear infinite;
+  }
+  
+  @keyframes rain {
+    0% {
+      transform: translateY(-100vh);
+    }
+    100% {
+      transform: translateY(100vh);
+    }
+  }
+  
